@@ -1,0 +1,74 @@
+body {
+	background-color: orange;
+}
+
+.hero > div {
+	display: inline-block;
+}
+
+.hero-image img {
+	width:30%;
+	height:30%;
+}
+
+.hero-text {
+	vertical-align: top;
+	color:white;
+}
+
+
+
+.button, .button a {
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(89, 197, 208);
+	height: 50px;
+	width: 150px;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color: white;
+	border-radius: 2%;
+}
+
+input {
+	background-color: orange;
+	border: 2px solid white;
+	border-radius: 2%;
+}
+
+.hero a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+.appDetails img {
+	width:25%;
+	height:25%;
+}
+
+li {
+	display:inline-block;
+}
+
+.appDetails li p {
+	color: white;
+}
+
+.contact-info li, .contact-info a {
+	color: white;
+}
+.contact-info ul{
+	text-align: center;
+}
+
+.contact-info div {
+	text-align: center;
+}
+
+.contact-info img {
+	height:10%;
+	width:10%;
+}

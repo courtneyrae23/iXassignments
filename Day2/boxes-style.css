@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  transition: .5s all ease;
+}
+
+.bigBox {
+  background: none;
+  width: 100%;
+}
+
+.bigBox > div {
+  margin: 2%;
+  background: cornflowerblue;
+  padding: 5%;
+  display: inline-block;
+  width: 40%;
+  border: 5px solid green;
+}
+
+.bigBox > div:nth-child(n+3) {
+	background: yellow;
+}
+
+.bigBox div div {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	background-color: red;
+}
+
+input:checked + .bigBox > div {
+	display: block;
+
+}
