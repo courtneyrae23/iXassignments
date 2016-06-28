@@ -1,0 +1,51 @@
+body {
+	background-color: rgb(235, 178, 99);
+}
+
+.text {
+    margin:20px 40px 15px 0px;
+    display: inline-block;
+    list-style:none;
+    letter-spacing: 1px;
+    font-family: Arial;
+    float:right;
+}
+
+div img {
+	width: 80%;
+	height: 80%;
+	vertical-align: center;
+	padding-left: 100px;
+}
+
+div ul li img {
+	width: 60%;
+	height: 60%;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.text a {
+	text-decoration: none;
+	color: white;
+}
+
+#OurClients {
+	background-color: rgb(246,246,246);
+}
+
+#ourWork {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(133, 219, 194);
+	color: white;
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: right;
+	padding-right: 70px;
+}
+
+ul li {
+	display: inline-block;
+}

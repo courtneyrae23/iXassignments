@@ -1,0 +1,105 @@
+.menu li a:hover {
+    text-decoration:none;
+    color:orange;
+}
+
+nav {
+	position: fixed;
+	background-color: white;
+	width:100%;
+}
+
+
+.text:first-child {
+	padding-left: 15em;
+}
+
+.text {
+    margin:20px 30px 15px 0px;
+    display: inline-block;
+    list-style:none;
+    font-family: Arial;
+}
+
+.text a {
+	font-size: 14px;
+}
+
+.image {
+    list-style:none;
+    display: inline-block;
+}
+ 
+.icon {
+	width: 40px;
+	height: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+
+.logo {
+	width: 11%;
+	height: 11%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+div img{
+	width:100%;
+}
+
+div {
+	background-color: #2f2f2f;
+	color:white;
+}
+
+p {
+	line-height: 250%;
+}
+
+.address {
+	line-height: 50%;
+}
+
+.header {
+	font-family: Verdana;
+	letter-spacing: 2px;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-right: 180px;
+	display: inline-block;
+}
+
+div li {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 170px;
+}
+
+td {
+	width: 80px;
+	height: 80px;
+}
+
+table {
+	border-spacing: 8px;
+}
+
+#fb {
+	width: 50px;
+	height: 50px;
+}
+
+#tweet {
+	width: 40px;
+	height: 40px;
+}
+
+#belancio {
+	color: white;
+}
