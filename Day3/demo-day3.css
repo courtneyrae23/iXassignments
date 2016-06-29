@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+	border: 3px solid orange;
+}
+
+.container div {
+	width: 25%;
+	float: left;
+	height: 400px;
+}
+
+.col1 {
+	border: 3px solid red;
+}
+
+.col2 {
+	border: 3px solid yellow;
+}
+
+.col3 {
+	border: 3px solid green;
+}
+
+.col4 {
+	border: 3px solid lightblue;
+}
+
+@media(max-width: 768px) {
+	.container div {
+		width: 50%;
+	}
+}
+
+@media(max-width: 480px) {
+	.container div {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
