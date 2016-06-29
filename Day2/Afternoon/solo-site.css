@@ -1,0 +1,152 @@
+.hero {
+	background-color: rgb(56, 126, 197);
+	height: 100%;
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+	border-bottom: 1px solid black;
+}
+
+.container {
+	margin: 0px auto;
+	width: 1200px;
+}
+
+.hero h1 {
+	font-family: sans-serif;
+	font-size: 105px;
+	margin-bottom: 0px;
+}
+
+.hero h3 {
+	font-family: serif;
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 150%;
+	color: #EFEFEF;
+}
+
+.buttons a {
+	height: 33px;
+	width: 170px;
+	color:white;
+	display: inline-block;
+	border-radius: 50px;
+	padding-top: 18px;
+	margin: 19px;
+	font-family: Arial Bold;
+	letter-spacing: 1px;
+	font-size: 11px;
+	text-decoration: none;
+	margin-bottom: 80px;
+}
+
+.btn1 {
+	background-color: rgb(45, 217, 142);
+}
+
+.btn2 {
+	background-color: rgb(106, 160, 203);
+}
+
+.hero img {
+	width: 70%;
+	margin-bottom: 70px;
+}
+
+.description {
+	padding-top: 30px;
+}
+
+.heading {
+	font-family: sans-serif;
+	font-size: 32px;
+	color: #303030;
+	text-align: center;
+
+}
+
+.description ul {
+	list-style: none;
+	border-bottom: 1px solid lightgray;
+}
+
+
+
+.description li {
+	width: 33%;
+	float: left;
+	padding: 0px 0px;
+}
+
+.description span {
+	width: 750px;
+	margin: 0px auto;
+	display: inline-block;
+}
+
+.subheading {
+	line-height: 150%;
+	font-family: serif;
+	font-size: 26px;
+	text-align: center;
+	color: #808080;
+	margin-bottom: 150px;
+}
+
+.description h3 {
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #404040;
+}
+
+.description li p {
+	font-family: serif;
+	font-size: 18px;
+	color: #808080;
+	line-height: 150%;
+	padding-right: 35px;
+
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.sample {
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	background-color: #F4F4F4;
+	padding-top: 50px;
+}
+
+.download {
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding-top: 50px;
+}
+
+.btn3 {
+	background-color: #C0C0C0;
+	color: black;
+}
+
+.contact h1 {
+	
+}
+
+.contact p {
+	float:right;
+}
+
+
