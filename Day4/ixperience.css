@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+.center {
+	max-width: 1100px;
+	margin: 0px auto;
+}
+
+.news {
+	height: 28px;
+	max-width: auto;
+}
+
+.blurb h1 {
+	font-size: 38px;
+	padding-bottom: 20px;
+}
+.blurb {
+	font-family: "Work Sans";
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.execs-blurb {
+	text-align: center;
+}
+
+.team img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+.progress h1 {
+	text-align: center;
+}
+
+.execs {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+.execs-blurb h5 {
+
+}
+
+.news:first-child {
+	padding-left: 30px;
+}
+
+.two-thirds div{
+	display: inline-block;
+
+}
+
