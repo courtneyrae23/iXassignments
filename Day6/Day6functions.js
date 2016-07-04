@@ -93,7 +93,6 @@ function areAnagrams (sentence1, sentence2) {
             return 'no';
         }
     }
-
     for (var j=0; j < sentence2.length; j++) {
         var letter = sentence2[j];
         
@@ -103,6 +102,5 @@ function areAnagrams (sentence1, sentence2) {
             return 'no';
         }
     }
-    
     return 'yes';
 }
