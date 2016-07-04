@@ -84,6 +84,7 @@ function areAnagrams (sentence1, sentence2) {
     //     return 'yes'
     // else
     //     return 'no'
+    
     for (var i=0; i < sentence1.length; i++) {
         var letter = sentence1[i];
         
