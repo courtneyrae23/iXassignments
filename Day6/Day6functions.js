@@ -79,29 +79,71 @@ function longestPalindrome(sentence) {
     return longestWord(sentence) + " is not a palindrome";
 }
 
+// Without Sort: O(4n^2 I think)
+//
+// function areAnagrams (sentence1, sentence2) {
+//     // if (sentence1 and sentence2 are anagrams)
+//     //     return 'yes'
+//     // else
+//     //     return 'no'
+
+//     for (var i=0; i < sentence1.length; i++) {
+//         var letter = sentence1[i];
+        
+//         if (letter === " ") {
+//             continue;
+//         } else if (letterCounter(sentence1, letter) !== letterCounter(sentence2, letter)) {
+//             return 'no';
+//         }
+//     }
+//     for (var j=0; j < sentence2.length; j++) {
+//         var letter = sentence2[j];
+        
+//         if (letter === " ") {
+//             continue;
+//         } else if (letterCounter(sentence2, letter) !== letterCounter(sentence1, letter)) {
+//             return 'no';
+//         }
+//     }
+//     return 'yes';
+// }
+
+
+// With sort: O(3n + 2*O(sort))
 function areAnagrams (sentence1, sentence2) {
     // if (sentence1 and sentence2 are anagrams)
     //     return 'yes'
     // else
     //     return 'no'
-    
-    for (var i=0; i < sentence1.length; i++) {
-        var letter = sentence1[i];
-        
-        if (letter === " ") {
-            continue;
-        } else if (letterCounter(sentence1, letter) !== letterCounter(sentence2, letter)) {
-            return 'no';
+    var letters1 = [];
+    var letters2 = [];
+
+    for (var i = 0; i < sentence1.length; i++) {
+        if (sentence1[i] !== " ") {
+            letters1.push(sentence1[i]);
         }
     }
-    for (var j=0; j < sentence2.length; j++) {
-        var letter = sentence2[j];
-        
-        if (letter === " ") {
-            continue;
-        } else if (letterCounter(sentence2, letter) !== letterCounter(sentence1, letter)) {
+
+    for (var j = 0; j < sentence2.length; j++) {
+        if (sentence2[j] !== " ") {
+            letters2.push(sentence2[j]);
+        }
+    }
+
+    if (letters1.length !== letters2.length) {
+        return 'no';
+    }
+
+    letters1.sort();
+    letters2.sort();
+
+    for (var k = 0; k < letters1.length; k++) {
+        if (letters1[k] !== letters2[k]) {
             return 'no';
         }
     }
     return 'yes';
 }
+
+
+
