@@ -110,40 +110,52 @@ function longestPalindrome(sentence) {
 
 
 // With sort: O(3n + 2*O(sort))
+// 
+// function areAnagrams (sentence1, sentence2) {
+//     // if (sentence1 and sentence2 are anagrams)
+//     //     return 'yes'
+//     // else
+//     //     return 'no'
+//     var letters1 = [];
+//     var letters2 = [];
+
+//     for (var i = 0; i < sentence1.length; i++) {
+//         if (sentence1[i] !== " ") {
+//             letters1.push(sentence1[i]);
+//         }
+//     }
+
+//     for (var j = 0; j < sentence2.length; j++) {
+//         if (sentence2[j] !== " ") {
+//             letters2.push(sentence2[j]);
+//         }
+//     }
+
+//     if (letters1.length !== letters2.length) {
+//         return 'no';
+//     }
+
+//     letters1.sort();
+//     letters2.sort();
+
+//     for (var k = 0; k < letters1.length; k++) {
+//         if (letters1[k] !== letters2[k]) {
+//             return 'no';
+//         }
+//     }
+//     return 'yes';
+// }
+
+
+// Official answer
 function areAnagrams (sentence1, sentence2) {
-    // if (sentence1 and sentence2 are anagrams)
-    //     return 'yes'
-    // else
-    //     return 'no'
-    var letters1 = [];
-    var letters2 = [];
+    var sorted1 = sentence1.split("").sort().join("").trim();
+    var sorted2 = sentence2.split("").sort().join("").trim();
 
-    for (var i = 0; i < sentence1.length; i++) {
-        if (sentence1[i] !== " ") {
-            letters1.push(sentence1[i]);
-        }
+    if (sorted1===sorted2) {
+        return 'yes';
     }
-
-    for (var j = 0; j < sentence2.length; j++) {
-        if (sentence2[j] !== " ") {
-            letters2.push(sentence2[j]);
-        }
-    }
-
-    if (letters1.length !== letters2.length) {
-        return 'no';
-    }
-
-    letters1.sort();
-    letters2.sort();
-
-    for (var k = 0; k < letters1.length; k++) {
-        if (letters1[k] !== letters2[k]) {
-            return 'no';
-        }
-    }
-    return 'yes';
+    return 'no';
 }
-
 
 
