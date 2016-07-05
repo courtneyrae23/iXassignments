@@ -1,0 +1,5 @@
+Print the names in the form to the console
+
+Change the color of the “Here’s a fun little div” text to red
+
+Start with the image hidden, and when the toggle image button is clicked make the image appear centered with a transparent black background. When the background is clicked, the image and background disappears.
