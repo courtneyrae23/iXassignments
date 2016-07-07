@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body ng-app="groceryApp">
+		<div ng-controller="GroceryCtrl">
+			<h1> Courtney's Grocery List </h1>
+			<div>
+				<p> Food Name </p>
+				<input ng-model="name">
+			</div>
+			<div>
+				<p> Quantity </p>
+				<input ng-model="quantity">
+			</div>
+
+			<button ng-click="addToList()"> Add to List </button>
+			<button ng-click="deleteList()"> Delete List </button>
+
+			<div>
+				<b> Search: </b>
+				<input ng-model="searchText">
+			</div>
+
+			<ol>
+				<li ng-repeat="obj in tasks | filter:searchText track by $index">
+					<div ng-show="!showEdit">
+						{{obj.name + " - " + obj.quantity}}
+						<button ng-click="increment(obj)"> + </button>
+						<button ng-click="decrement(obj)"> - </button>
+						<button ng-click="delete($index)"> delete </button>
+						<button ng-click="showEdit = true"> edit </button>
+					</div>
+					<div ng-show="showEdit">
+						<input ng-model="obj.name">
+						<button ng-click="showEdit=false"> done </button>
+					</div>
+				</li>
+			</ol>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+			<script src="grocery.js"></script>
+		</div>
+	</body>
+</html>
