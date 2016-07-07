@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body ng-app="groceryApp">
+		<div ng-controller="GroceryCtrl">
+			<div>
+				<p> Food Name </p>
+				<input ng-model="name">
+			</div>
+			<div>
+				<p> Quantity </p>
+				<input ng-model="quantity">
+			</div>
+
+			<button ng-click="addToList()"> Add to List </button>
+
+			<div>
+				<b> Search: </b>
+				<input ng-model="searchText">
+			</div>
+
+			<ol>
+				<li ng-repeat="obj in tasks | filter:searchText track by $index">
+					{{obj.name + " - " + obj.quantity}}
+					<button ng-click="increment(obj)"> + </button>
+					<button ng-click="decrement(obj)"> - </button>
+				</li>
+			</ol>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+			<script src="day8afternoon.js"></script>
+		</div>
+	</body>
+</html>
