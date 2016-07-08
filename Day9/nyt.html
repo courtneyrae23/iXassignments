@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body ng-app="nytApp">
+		<div ng-controller="NYTCtrl">
+			<input ng-model="searchText">
+			<button ng-click="searchFor()"> Search </button>
+			<div ng-repeat="a in articles">
+				<h3><a href="{{a.url}}"> {{a.snippet}} </a></h3>
+		</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+			<script src="nyt.js"></script>
+	</body>
+</html>
