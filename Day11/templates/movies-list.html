@@ -1,0 +1,8 @@
+<h1> Search for Movie </h1>
+<input ng-model="searchText">
+<button ng-click="movieSearch()"> Search </button>
+<ul>
+	<li ng-repeat="movie in movieArray">
+		<a href="#/movie/{{movie.imdbID}}">{{movie.Title}}</a>
+	</li>
+</ul>

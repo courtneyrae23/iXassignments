@@ -1,0 +1,11 @@
+<h1> {{ movie.Title }} </h1>
+<h3> Directed By: {{ movie.Director}} </h3>
+<p> {{movie.Plot}} </p>
+
+<div>
+	<ul>
+		<li ng-repeat="gif in gifArray">
+			<img src="{{gif.images.fixed_height.url}}">
+		</li>
+	</ul>
+</div>
