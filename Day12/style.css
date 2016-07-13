@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+
+.inputs {
+	border-bottom: 2px solid lightgray;
+	position: relative;
+}
+
+.inputs div{
+	display: inline-block;
+	margin: 10px;
+}
+
+.feed-entries {
+	margin: 10px;
+}
+
+
+.header div {
+	display: inline-block;
+}
+
+.forward-link {
+	float: right;
+}
+
+.refresh-btn {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	
+}
+
+.forward-link a {
+	text-decoration: none;
+	font-family: "Lato", cursive;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+/* myProps.html style */
+
+.title {
+	font-family: "Lato", cursive;
+	font-weight: 300;
+	font-size: 26px;
+}
+
+.return-link a {
+	font-family: "Lato", cursive;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.stickyNotes > div {
+	display: inline-block;
+}
+
+.prop {
+	margin: 10px;
+	height: 250px;
+	width: 250px;
+	background-color: #FCF0AD;
+	font-family: "Covered By Your Grace", cursive;
+	font-size: 25px;
+	position: relative;
+	box-shadow: 1px 5px 10px #000000;
+}
+
+.score {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-family: "Lato", cursive;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.text {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, 0%);
+}

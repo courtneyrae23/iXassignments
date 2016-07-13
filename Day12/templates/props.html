@@ -1,0 +1,29 @@
+<div class="header">
+	<div ng-click="loadProps()"> <h1> Chommies! </h1> </div>
+	<div class="forward-link"> <a href="#/myProps"> Go to My Page &#8594; </a> </div>
+</div>
+
+<div ng-show="errorMsg"> Error: {{warning}} </div>
+
+<div class="inputs">
+	<div class="selectBru">
+		<label for="select"> Select Bru: </label><br>
+		<select 
+			name="select"
+			ng-options="bru.first_name for bru in brus"
+			ng-model="selectedBru"></select>
+	</div>
+	<div class="enterProps">
+		<label for="inputText"> Write Props: </label><br>	
+		<input name="inputText" ng-model="newPropsValue">
+	</div>
+	<div>
+		<button ng-click="sendProps()"> Send Props </button>
+	</div>
+
+	<div class="refresh-btn"> <button ng-click="loadProps()"> Refresh Feed </button> </div>
+</div>
+
+<div class="feed-entries" ng-repeat="prop in props">
+	@{{prop.receiver.first_name}} : {{prop.text}}
+</div>
