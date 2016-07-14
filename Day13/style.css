@@ -1,0 +1,11 @@
+.header {
+	border-bottom: 2px solid lightgray;
+}
+
+.header div {
+	margin: 20px;
+}
+
+.messages p {
+	margin: 10px;
+}
