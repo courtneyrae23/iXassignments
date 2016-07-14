@@ -1,0 +1,23 @@
+<a href="#/channels/"> Back to Channels Page </a>
+
+<h1> {{channelName.name}} </h1>
+
+<div class="header">
+	<div>
+		Name: 
+		<input ng-model = "userName"></input>
+	</div>
+
+	<div>
+		Message: 
+		<input ng-model = "messageText"></input>
+	</div>
+
+	<div> <button ng-click="addMessage()"> Submit </button> </div>
+</div>
+
+
+
+<div ng-class="messages" ng-repeat="message in messages">
+	<p> {{message.sender}}: {{message.text}} </p>
+</div>

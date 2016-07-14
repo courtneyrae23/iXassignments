@@ -1,0 +1,39 @@
+.header {
+	border-bottom: 2px solid lightgray;
+}
+
+.header div {
+	margin: 20px;
+}
+
+.messages p {
+	margin: 10px;
+}
+
+.centered {
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+}
+
+.mainBox {
+	border-radius: 20px;
+	background-color: lightgray;
+	padding: 20px;	
+}
+
+.mainBox input {
+	margin: 10px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.changePage {
+	padding: 20px;
+	margin-top: 30px;
+	border-radius: 20px;
+	background-color: lightgray;
+}
+

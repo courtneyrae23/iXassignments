@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body ng-app="tensionApp">
+		<div ng-view></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="angular-route.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+		<script>
+	    // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAKOY0tgLqqiyby5G3Y4iBzudPqxppmmos",
+		    authDomain: "tension-e0b41.firebaseapp.com",
+		    databaseURL: "https://tension-e0b41.firebaseio.com",
+		    storageBucket: "",
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
